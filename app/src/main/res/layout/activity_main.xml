@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF3E0">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrito de Compras"
+        android:textSize="24sp"
+        android:textColor="#FF6F00"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewArepa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Arepa (10,000 gs)"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/buttonArepaAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/buttonArepaSubtract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textViewArepaCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewEmpanada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Empanada (5,000 gs)"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/buttonEmpanadaAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/buttonEmpanadaSubtract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textViewEmpanadaCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: 0 gs"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Monto pagado en efectivo"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonCalculateChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular Cambio"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambio: 0 gs"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</RelativeLayout>
